@@ -4,10 +4,10 @@
 
 #ADF Test and PACF/ACF requires Vector of INT64
 #PACF
-pacf_plot = plot(Forecast.pacf(main_df.TMAX,lag = 25))
+pacf_plot = plot(Forecast.pacf(y_train,lag = 25))
 
 #ACF
-acf_plot = plot(Forecast.acf(main_df.TMAX, lag = 25))
+acf_plot = plot(Forecast.acf(y_train, lag = 25))
 
 plot(acf_plot)
 plot(pacf_plot)
