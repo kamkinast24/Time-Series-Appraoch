@@ -1,5 +1,10 @@
 using StateSpaceModels
 
+#Seasonal Trend Decompsotion on Loes 
+
+stl_ap = stl(y_train,365; robust = true)
+plot(stl_ap)
+
 #Exponential Smoothing using Houston's Maximum Temperature
 
 #Create ES model based on y trainset
