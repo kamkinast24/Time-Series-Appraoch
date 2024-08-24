@@ -29,7 +29,7 @@ main_df[!, :DAY] =  1.0:nrow(main_df)
 using HypothesisTests
 
 #Stationarity Test ~ ADF
-println(ADFTest(batch_df.TMAX, Symbol("constant"),5))
+println(ADFTest(y_train, Symbol("constant"),5))
 
 #Creating training and test set
 using MLDataUtils
